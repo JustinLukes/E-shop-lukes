@@ -1,39 +1,225 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">E-shop</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html">Products</a>
-                    </li>
-                </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>RTXShop.CZ - Kontakty a Reklamace</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <div class="loader" id="loader">
+      <div class="orb-container">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="central-dot"></div>
+          <div class="loading-text">Načitání</div>
+      </div>
+  </div>
+    
+        
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><span class="logo">RTXShop</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+
+
+
+
+
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">O nás</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html">Kontakty a Reklamace</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="products.html">Grafické Karty RTX</a>
+              </li>           
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <section id="produkty" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 rtx-gradient-text">Grafické Karty RTX</h2>
+            <div class="row g-4">
+                <!-- RTX 50 Series -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card bg-dark">
+                        <img src="https://interlink-static2.tsbohemia.cz/msi-geforce-rtx-5090-32g-gaming-trio-oc_ien539842.jpg" class="card-img-top" alt="RTX 5090">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">NVIDIA RTX 5090</h5>
+                            <ul class="spec-list">
+                                <li>24GB GDDR7</li>
+                                <li>18 432 CUDA jader</li>
+                                <li>PCIe 5.0 x16</li>
+                                <li class="price-counter" data-price="54990">54 990 Kč</li>
+                            </ul>
+                            <button class="btn btn-rtx w-100">Předobjednat</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- RTX 40 Series -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card bg-dark">
+                        <img src="https://www.overclockers.ua/news/video/131664-geforce-rtx-4090-100tflops-1.jpg" class="card-img-top" alt="RTX 4090">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">NVIDIA RTX 4090</h5>
+                            <ul class="spec-list">
+                                <li>24GB GDDR6X</li>
+                                <li>16 384 CUDA jader</li>
+                                <li>DLSS 3.5</li>
+                                <li class="price-counter" data-price="49990">49 990 Kč</li>
+                            </ul>
+                            <button class="btn btn-rtx w-100">Koupit</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- RTX 30 Series -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card bg-dark">
+                        <img src="https://th.bing.com/th/id/OIP.Es6RrOlj5c7huLbmMYQjqQHaDV?rs=1&pid=ImgDetMain" class="card-img-top" alt="RTX 3090">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">NVIDIA RTX 3090</h5>
+                            <ul class="spec-list">
+                                <li>24GB GDDR6X</li>
+                                <li>10 496 CUDA jader</li>
+                                <li>DLSS 2.0</li>
+                                <li class="price-counter" data-price="34990">34 990     Kč</li>
+                            </ul>
+                            <button class="btn btn-rtx w-100">Koupit</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- RTX 20 Series -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card bg-dark">
+                        <img src="https://th.bing.com/th/id/OIP.ozSyeqJ3QVY2wpEA62ekxAHaFZ?rs=1&pid=ImgDetMain" class="card-img-top" alt="RTX 2080 Ti">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">NVIDIA RTX 2080 Ti</h5>
+                            <ul class="spec-list">
+                                <li>11GB GDDR6</li>
+                                <li>4 352 CUDA jader</li>
+                                <li>Ray Tracing</li>
+                                <li class="price-counter" data-price="21990">21 990 Kč</li>
+                            </ul>
+                            <button class="btn btn-rtx w-100">Koupit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Další modely -->
+            <div class="row g-4 mt-2">
+                <!-- RTX 4080 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card bg-dark">
+                        <img src="https://assets-prd.ignimgs.com/2022/11/14/pxl-20221114-204750800-portrait-1668461745546.jpg" class="card-img-top" alt="RTX 4080">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">NVIDIA RTX 4080</h5>
+                            <ul class="spec-list">
+                                <li>16GB GDDR6X</li>
+                                <li>9 728 CUDA jader</li>
+                                <li>DLSS 3.0</li>
+                                <li class="price-counter" data-price="36990">36 990 Kč</li>
+                            </ul>
+                            <button class="btn btn-rtx w-100">Koupit</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- RTX 4070 Ti -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card bg-dark">
+                        <img src="https://th.bing.com/th/id/R.353762e672c4123fb1bf8e0bd1bebed1?rik=cBmo%2b8xIdxh0BA&pid=ImgRaw&r=0" class="card-img-top" alt="RTX 4070 Ti">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">NVIDIA RTX 4070 Ti</h5>
+                            <ul class="spec-list">
+                                <li>12GB GDDR6X</li>
+                                <li>7 680 CUDA jader</li>
+                                <li>PCIe 4.0</li>
+                                <li class="price-counter" data-price="26990">26 990 Kč</li>
+                            </ul>
+                            <button class="btn btn-rtx w-100">Koupit</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- RTX 3060 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card bg-dark">
+                        <img src="https://th.bing.com/th/id/OIP.ML6rrqvt9KhwY7hWJQW5rgHaE2?rs=1&pid=ImgDetMain" class="card-img-top" alt="RTX 3060">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">NVIDIA RTX 3060</h5>
+                            <ul class="spec-list">
+                                <li>12GB GDDR6</li>
+                                <li>3 584 CUDA jader</li>
+                                <li>DLSS 2.0</li>
+                                <li class="price-counter" data-price="12990">12 990 Kč</li>
+                            </ul>
+                            <button class="btn btn-rtx w-100">Koupit</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- RTX 2070 Super -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card product-card bg-dark">
+                        <img src="https://th.bing.com/th/id/OIP.Tg0xkAIHV9EnM6aafiLsUQHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="RTX 2070 Super">
+                        <div class="card-body">
+                            <h5 class="card-title text-success">NVIDIA RTX 2070 Super</h5>
+                            <ul class="spec-list">
+                                <li>8GB GDDR6</li>
+                                <li>2 560 CUDA jader</li>
+                                <li>PCIe 3.0</li>
+                                <li class="price-counter" data-price="15990">15 990 Kč</li>
+                            </ul>
+                            <button class="btn btn-rtx w-100">Koupit</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="container mt-4">
-        <h1>Coming Soon...</h1>
-        <p>Nic k vidění, ale stránka bude brzy aktulizována</p>
-    </div>
+
+
+
+
+
+
+
+
+    <footer class="py-4 bg-dark border-top border-success">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 RTXShop.cz - Všechna práva vyhrazena</p>
+        </div>
+    </footer>
+
+
+
+
+
 </body>
+<script src="main.js"></script>
 </html>

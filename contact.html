@@ -1,39 +1,185 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">E-shop</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="products.html">Products</a>
-                    </li>
-                </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>RTXShop.CZ - Kontakty a Reklamace</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <div class="loader" id="loader">
+      <div class="orb-container">
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+          <div class="central-dot"></div>
+          <div class="loading-text">Načitání</div>
+      </div>
+  </div>
+    
+        
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><span class="logo">RTXShop</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+
+
+
+
+
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="about.html">O nás</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html">Kontakty a Reklamace</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="products.html">Grafické Karty RTX</a>
+              </li>           
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+    <section id="kontakt" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 rtx-gradient-text">Kontaktujte Nás</h2>
+            <div class="row g-5">
+                <div class="col-md-6">
+                    <div class="bg-dark p-4 rounded-3">
+                        <h4 class="text-success mb-4">Kontaktní informace</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-geo-alt-fill text-success me-2"></i>
+                                <strong>Sídlo společnosti:</strong><br>
+                                RTXShop.cz s.r.o.<br>
+                                Amarillo Vista<br>
+                                East Los Santos
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-telephone-fill text-success me-2"></i>
+                                <strong>Telefon:</strong> +420 069 420 690
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-envelope-fill text-success me-2"></i>
+                                <strong>E-mail:</strong> info@rtxshop.cz
+                            </li>
+                            <li>
+                                <i class="bi bi-clock-fill text-success me-2"></i>
+                                <strong>Otevírací doba:</strong><br>
+                                Po-Pá: 8:00 - 18:00<br>
+                                So: 9:00 - 12:00
+                            </li>
+                        </ul>
+                        <div class="mt-4">
+                            <img src="mapa.png" width="100%" height="100%"/>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="bg-dark p-4 rounded-3">
+                        <h4 class="text-success mb-4">Kontaktní formulář</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">Vaše jméno</label>
+                                <input type="text" class="form-control bg-dark text-light" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">E-mail</label>
+                                <input type="email" class="form-control bg-dark text-light" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Předmět zprávy</label>
+                                <select class="form-select bg-dark text-light">
+                                    <option>Dotaz k produktu</option>
+                                    <option>Reklamace</option>
+                                    <option>Doprava</option>
+                                    <option>Jiné</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Zpráva</label>
+                                <textarea class="form-control bg-dark text-light" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-rtx">Odeslat zprávu</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    <div class="container mt-4">
-        <h1>Coming Soon...</h1>
-        <p>Nic k vidění, ale stránka bude brzy aktulizována</p>
-    </div>
+    </section>
+    
+    <!-- Sekce pro reklamace -->
+    <section id="reklamace" class="py-5 bg-secondary bg-opacity-10">
+        <div class="container">
+            <h2 class="text-center mb-5 rtx-gradient-text">Reklamace a Vrácení Zboží</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="bg-dark p-4 rounded-3">
+                        <h4 class="text-success">Postup reklamace</h4>
+                        <ol class="mt-3">
+                            <li class="mb-2">Zaregistrujte reklamaci přes náš kontaktní formulář</li>
+                            <li class="mb-2">Obdržíte instrukce k odeslání zboží</li>
+                            <li class="mb-2">Zboží zabalíte včetně všech příslušenství</li>
+                            <li class="mb-2">Odeslete na naši adresu doporučeně</li>
+                            <li>Vyřízení reklamace do 14 pracovních dnů</li>
+                        </ol>
+                    </div>
+                </div>
+    
+                <div class="col-md-6">
+                    <div class="bg-dark p-4 rounded-3">
+                        <h4 class="text-success">Podmínky vrácení</h4>
+                        <ul class="mt-3">
+                            <li class="mb-2">Lhůta pro vrácení zboží: 14 dnů od přijetí</li>
+                            <li class="mb-2">Zboží musí být v původním stavu</li>
+                            <li class="mb-2">Všechny originální součásti musí být přiloženy</li>
+                            <li class="mb-2">Poškozené zboží nelze vrátit</li>
+                            <li>Náklady na dopravu hradí kupující</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="col-12 mt-4">
+                    <div class="alert alert-success bg-dark border-success">
+                        <h5><i class="bi bi-info-circle-fill me-2"></i><span style="color:white;">Důležité informace</span></h5>
+                        <p class="mb-0">
+                            Pro urychlení procesu mějte připravené:<br>
+                            - Číslo objednávky<br>
+                            - Doklad o koupi<br>
+                            - Popis závady
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 bg-dark border-top border-success">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 RTXShop.cz - Všechna práva vyhrazena</p>
+        </div>
+    </footer>
+
+
+
+
+
 </body>
+<script src="main.js"></script>
 </html>
